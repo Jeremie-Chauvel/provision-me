@@ -4,12 +4,12 @@
 set -eo pipefail
 IFS=$'\n\t'
 
-readonly chezmoi_repository=$1
+readonly chezmoi_repository_arg=$1
 set -u
 sudo -v
 
 source ./install/packages.sh
-source ./install/chezmoi.sh "$chezmoi_repository"
+source ./install/chezmoi.sh "$chezmoi_repository_arg"
 source ./install/tldr.sh
 source ./install/kitty.sh
 source ./install/ulauncher.sh
