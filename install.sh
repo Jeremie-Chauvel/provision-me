@@ -23,7 +23,7 @@ source ./install/httpie.sh
 source ./install/xclip.sh
 source ./install/aspell.sh
 #source ./install/i3.sh
-source ./install/clementine.sh
+#source ./install/clementine.sh
 source ./install/polybar.sh
 source ./install/docker.sh
 source ./install/zsh-plugins.sh
