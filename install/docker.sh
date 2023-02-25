@@ -22,5 +22,7 @@ result_status="$?"
 set -e
 if [ "$result_status" -gt 0 ]; then
   sudo apt install --yes docker-compose-plugin curl
-  curl -fL https://raw.githubusercontent.com/docker/compose-switch/master/install_on_linux.sh | bash
+  curl -fL https://raw.githubusercontent.com/docker/compose-switch/master/install_on_linux.sh -o install_on_linux.sh
+  sudo bash install_on_linux.sh
+  rm install_on_linux.sh
 fi
