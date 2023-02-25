@@ -3,7 +3,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-if [ -e '/usr/local/bin/kitty' ]; then
+if [ -L '/usr/local/bin/kitty' ]; then
   exit 0
 fi
 
