@@ -24,7 +24,7 @@ source ./install/xclip.sh
 source ./install/aspell.sh
 #source ./install/i3.sh
 #source ./install/clementine.sh
-source ./install/polybar.sh
+#source ./install/polybar.sh
 source ./install/docker.sh
 source ./install/zsh-plugins.sh
 source ./config/update-max-user-watches.sh

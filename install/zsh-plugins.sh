@@ -22,7 +22,7 @@ add_plugin_from_git() {
   set -u
   if [ -d "${zsh_plugin_folder}/${plugin_directory}" ]; then
     cd "${zsh_plugin_folder}/${plugin_directory}"
-    git checkout master
+    git checkout master || git checkout main
     git pull
   else
     git clone "$plugin_url" "${zsh_plugin_folder}/${plugin_directory}"
@@ -75,9 +75,7 @@ set -e
 # install rbenv
 if [[ "$result_status" -gt 0 ]]; then
   rm -rf "$HOME/.rbenv"
-  sudo apt install -y build-essential libssl-dev zlib1g-dev libreadline-dev
-  git clone git://github.com/sstephenson/rbenv.git "$HOME/.rbenv"
-  git clone git://github.com/sstephenson/ruby-build.git "$HOME/.rbenv/plugins/ruby-build"
+  curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
 
   set +e
   grep -q ~/.zshrc -e "rbenv init -"
@@ -120,12 +118,12 @@ if [[ "$result_status" -gt 0 ]]; then
 fi
 
 # LS_COLORS https://github.com/trapd00r/LS_COLORS
-if [[ ! -f ~/.local/share/lscolors.sh ]]; then
-  tmp_dir=$(mktemp -d -t LS_COLORS-XXXX)
-  curl -L https://api.github.com/repos/trapd00r/LS_COLORS/tarball/master | tar xzf - --directory="$tmp_dir" --strip=1
-  bash -c "cd $tmp_dir && sh install.sh" >/dev/null
-  rm -rf "$tmp_dir"
-fi
+# if [[ ! -f ~/.local/share/lscolors.sh ]]; then
+#   tmp_dir=$(mktemp -d -t LS_COLORS-XXXX)
+#   curl -L https://api.github.com/repos/trapd00r/LS_COLORS/tarball/master | tar xzf - --directory="$tmp_dir" --strip=1
+#   bash -c "cd $tmp_dir && sh install.sh" >/dev/null
+#   rm -rf "$tmp_dir"
+# fi
 
 # fzf https://github.com/junegunn/fzf
 set +e

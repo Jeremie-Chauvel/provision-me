@@ -2,5 +2,5 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-sudo apt install vokoscreen audacity
+sudo apt install vokoscreen audacity --yes
 sudo apt install --reinstall libid3tag0
