@@ -118,12 +118,11 @@ if [[ "$result_status" -gt 0 ]]; then
 fi
 
 # LS_COLORS https://github.com/trapd00r/LS_COLORS
-# if [[ ! -f ~/.local/share/lscolors.sh ]]; then
-#   tmp_dir=$(mktemp -d -t LS_COLORS-XXXX)
-#   curl -L https://api.github.com/repos/trapd00r/LS_COLORS/tarball/master | tar xzf - --directory="$tmp_dir" --strip=1
-#   bash -c "cd $tmp_dir && sh install.sh" >/dev/null
-#   rm -rf "$tmp_dir"
-# fi
+if [[ ! -f ~/.local/share/lscolors.sh ]]; then
+
+  curl -fsSL https://raw.githubusercontent.com/trapd00r/LS_COLORS/master/lscolors.sh -o ~/.local/share/lscolors.sh
+
+fi
 
 # fzf https://github.com/junegunn/fzf
 set +e

@@ -8,6 +8,7 @@ readonly chezmoi_repository_arg=$1
 set -u
 sudo -v
 
+source ./install/nix.sh
 source ./install/packages.sh
 source ./install/chezmoi.sh "$chezmoi_repository_arg"
 source ./install/tldr.sh
