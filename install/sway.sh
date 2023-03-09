@@ -4,10 +4,14 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-nix-env -iA nixpkgs.sway
+# nix-env -iA nixpkgs.sway -> doesnt work, needs to install links or something
+sudo apt install sway --yes
 nix-env -iA nixpkgs.swaylock
 nix-env -iA nixpkgs.wl-clipboard
 nix-env -iA nixpkgs.way-displays
+nix-env -iA nixpkgs.swayidle
+nix-env -iA nixpkgs.polkit
+sudo cp ~/.nix-profile/share/wayland-sessions/* /usr/share/wayland-sessions/
 # if [[ ! -d "$HOME/.i3/i3-volume" ]]; then
 #   git clone https://github.com/hastinbe/i3-volume.git "$HOME/.i3/i3-volume"
 # fi

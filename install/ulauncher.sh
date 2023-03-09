@@ -3,9 +3,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-SCRIPT_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
-source "$SCRIPT_DIRECTORY/utils/early_exit_if_command_exist.sh"
-early_exit_if_command_exist ulauncher
+# nix-env -iA nixpkgs.wmctrl
 
 sudo apt install --yes curl
 readonly ulauncher_downloads_urls=$(curl -s https://api.github.com/repos/Ulauncher/Ulauncher/releases/latest | jq '.assets | map(.browser_download_url)')
