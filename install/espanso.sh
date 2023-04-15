@@ -9,5 +9,5 @@ curl -fsSL https://github.com/federico-terzi/espanso/releases/download/v2.1.8/es
 sudo apt install ./espanso.deb --yes
 rm ./espanso.deb
 sudo setcap "cap_dac_override+p" $(which espanso)
-espanso register
+espanso service register
 espanso start
