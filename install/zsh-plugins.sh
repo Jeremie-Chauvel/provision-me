@@ -3,7 +3,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-sudo apt install --yes zsh git curl wget
+sudo apt install --yes zsh git curl wget libnotify-bin # for zsh-auto-notify
 
 # install oh my zsh
 if [ ! -d ${HOME}/.oh-my-zsh ]; then
