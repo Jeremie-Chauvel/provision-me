@@ -96,14 +96,14 @@ set +e
 result_status="$(rbenv versions | wc -l)"
 set -e
 if [[ "$result_status" -eq 0 ]]; then
-  rbenv install 2.6.0-rc2
+  rbenv install 2.7.8
   rbenv rehash
 fi
 echo '''
 install: --no-ri --no-rdoc
 update:  --no-ri --no-rdoc
 ''' | tee "$HOME/.gemrc" >/dev/null
-rbenv global 2.6.0-rc2
+rbenv global 2.7.8
 eval "$(rbenv init -)"
 
 # goodies
