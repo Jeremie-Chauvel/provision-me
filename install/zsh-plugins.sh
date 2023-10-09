@@ -33,6 +33,7 @@ add_plugin_from_git 'zsh-syntax-highlighting' 'https://github.com/zsh-users/zsh-
 add_plugin_from_git 'auto-notify' 'https://github.com/MichaelAquilina/zsh-auto-notify.git'
 add_plugin_from_git 'fzf-tab' 'https://github.com/Aloxaf/fzf-tab.git'
 add_plugin_from_git 'yarn-completion' 'https://github.com/buonomo/yarn-completion'
+add_plugin_from_git 'alias-tips' 'https://github.com/djui/alias-tips.git'
 
 # Install oh my zshrc
 readonly powerlevel10k_dir="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
