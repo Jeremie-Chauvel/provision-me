@@ -6,7 +6,7 @@ IFS=$'\n\t'
 sudo apt update
 # generic
 sudo apt install --yes git neovim curl wget make htop tree libpng-dev \
-  resolvconf python3-pip jq gnupg2 fd-find
+  resolvconf python3-pip jq gnupg2 fd-find direnv
 
 # TODO test if this is still needed
 sudo apt install --yes fonts-noto-color-emoji
