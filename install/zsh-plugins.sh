@@ -57,7 +57,7 @@ fc-list : family | grep -e "Hack Nerd Font"
 result_status="$?"
 set -e
 if [[ "$result_status" -gt 0 ]]; then
-  wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/Hack.zip --no-check-certificate
+  wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/Hack.zip --no-check-certificate
   mkdir hack
   unzip Hack.zip -d hack
   sudo mv hack /usr/share/fonts/truetype
