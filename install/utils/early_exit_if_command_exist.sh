@@ -7,7 +7,7 @@ source "$SCRIPT_DIRECTORY/is_command.sh"
 
 early_exit_if_command_exist() {
   set +u
-  local readonly command_name="$1"
+  local command_name="$1"
   set -u
   set +e
   is_command "$command_name"
