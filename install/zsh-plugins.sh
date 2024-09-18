@@ -92,6 +92,7 @@ eval "$(rbenv init -)"
 fi
 
 eval "$(rbenv init -)"
+# TODO remove ruby usage here, maintaining this hurt
 # install a ruby version if needed
 set +e
 result_status="$(rbenv versions | wc -l)"
