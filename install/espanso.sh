@@ -5,7 +5,7 @@ IFS=$'\n\t'
 
 # TODO wayland test
 sudo apt install --yes curl
-curl -fsSL https://github.com/federico-terzi/espanso/releases/download/v2.1.8/espanso-debian-wayland-amd64.deb -o ./espanso.deb
+curl -fsSL https://github.com/espanso/espanso/releases/download/v2.2.1/espanso-debian-wayland-amd64.deb -o ./espanso.deb
 sudo apt install ./espanso.deb --yes
 rm ./espanso.deb
 sudo setcap "cap_dac_override+p" $(which espanso)
