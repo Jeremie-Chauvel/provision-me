@@ -1,8 +1,8 @@
-# Provisioning Ubuntu
+# Provisioning Bluefin
 
 This repository contain a collection fo script to install almost every tools I use.
 
-I use this repo alongside a chezmoi dotfiles repository to provision a new ubuntu installation by simply installing git ([ssh setup](https://docs.github.com/en/authentication/connecting-to-github-with-ssh))and launching the installation script below.
+I use this repo alongside a chezmoi dotfiles repository to provision a new bluefin installation by simply installing git ([ssh setup](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)) and launching the installation script below.
 
 ## Disclaimer
 
@@ -27,7 +27,7 @@ bash ./install.sh [optional chezmoi dotfiles repository]
 ex:
 
 ```bash
-bash ./install.sh git@github.com:Jeremie-Chauvel/chezmoi.git
+bash ./install.sh git@github.com:Jeremie-Chauvel/chezmoi.git/bluefin
 ```
 
 or run a given script:
