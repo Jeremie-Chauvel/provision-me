@@ -4,7 +4,8 @@ set -euo pipefail
 IFS=$'\n\t'
 
 set +eu
-curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin launch=n
+
 set -eu
 
 #sudo ln -srf ~/.local/kitty.app/bin/kitty ~/.local/kitty.app/bin/kitten /usr/local/bin/
