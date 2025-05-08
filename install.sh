@@ -25,12 +25,13 @@ source ./install/kitty.sh
 # source ./install/fnm.sh # brew
 # source ./install/github-cli.sh
 # source ./install/brave.sh # flathub automation
-flatpak install flathub com.brave.Browser
-flatpak install flathub com.slack.Slack
-flatpak install flathub com.spotify.Client
+flatpak install --or-update --assumeyes flathub com.brave.Browser 
+flatpak install --or-update --assumeyes flathub com.slack.Slack
+flatpak install --or-update --assumeyes flathub com.spotify.Client
+flatpak install --or-update --assumeyes flathub org.flameshot.Flameshot
 # source ./install/gimp.sh
 # source ./install/flameshot.sh
-flatpak install flathub org.flameshot.Flameshot
+
 
 # source ./install/redshift.sh
 # source ./install/httpie.sh # brew
