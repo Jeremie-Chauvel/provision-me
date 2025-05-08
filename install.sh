@@ -9,9 +9,7 @@ set -u
 sudo -v
 
 #SHELL=zsh ujust bluefin-cli
-zsh
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
 
