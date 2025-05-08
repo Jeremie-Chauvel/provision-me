@@ -3,10 +3,17 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-sudo apt update
-# generic
-sudo apt install --yes git nala curl wget make htop tree libpng-dev \
-  resolvconf python3-pip jq gnupg2 fd-find ripgrep git-absorb
+brew install atuin direnv ripgrep \
+      fzf fd tealdeer yq gh neovim jesseduffield/lazygit/lazygit \
+      git-absorb fnm httpie xclip git-delta
 
-# TODO test if this is still needed
-sudo apt install --yes fonts-noto-color-emoji
+
+
+
+# sudo apt update
+# # generic
+# sudo apt install --yes git nala curl wget make htop tree libpng-dev \
+#   resolvconf python3-pip jq gnupg2 fd-find ripgrep git-absorb
+
+# # TODO test if this is still needed
+# sudo apt install --yes fonts-noto-color-emoji
