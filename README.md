@@ -6,6 +6,8 @@ I use this repo alongside a chezmoi dotfiles repository to provision a new bluef
 
 ## Disclaimer
 
+This is a custom install for my setup, modify the chezmoi url
+
 Using the global script install a ton of tools, you might want to update the list before launching the installation or pick the tool you want to install. (A TODO on my part is a picker for the installed tools)
 
 **⚠ You should always read a script before executing it on your system and avoid executing random scripts of the internet 😊**.
@@ -18,17 +20,12 @@ Clone this repository:
 git clone git@github.com:Jeremie-Chauvel/provision-me.git
 ```
 
-then read the disclaimer, once done, run the global install script:
+then **read the disclaimer**, once done, run the global install script:
 
 ```bash
-bash ./install.sh [optional chezmoi dotfiles repository]
+bash ./install.sh
 ```
 
-ex:
-
-```bash
-bash ./install.sh git@github.com:Jeremie-Chauvel/chezmoi.git --branch bluefin
-```
 
 or run a given script:
 
