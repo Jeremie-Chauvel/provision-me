@@ -43,9 +43,6 @@ gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-2" "['<Super
 gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-3" "['<Super>quotedbl']"
 gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-4" "['<Super>apostrophe']"
 gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-last" "['<Super>parenleft']"
-gsettings set org.gnome.desktop.wm.keybindings "~/.local/kitty.app/bin/kitty" "['<Super>t']"
-
-
 
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"
