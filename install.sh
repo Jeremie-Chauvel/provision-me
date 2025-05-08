@@ -41,10 +41,10 @@ flatpak install --or-update --assumeyes flathub org.flameshot.Flameshot
 # #source ./install/clementine.sh
 # #source ./install/polybar.sh
 # source ./install/docker.sh
-source ./install/zsh-plugins.sh
 # source ./config/update-max-user-watches.sh
 # source ./config/disable-instant-shutdown-power-button.sh
 source ./config/keymap-gnome.sh
+source ./install/zsh-plugins.sh
 # source ./install/vscode.sh
 # source ./install/pipenv.sh
 # source ./install/go.sh

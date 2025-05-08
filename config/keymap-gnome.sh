@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # setup some keybindings for ubuntu
 
-if (("gnome" != $(echo $DESKTOP_SESSION))); then
+if [[ "gnome" != $(echo $DESKTOP_SESSION) ]]; then
   echo "not on Gnome, skipping"
   exit 0
 fi
