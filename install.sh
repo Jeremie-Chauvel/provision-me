@@ -18,7 +18,7 @@ sudo -v
 # source ./install/nix.sh
 source ./install/packages.sh
 source ./install/atuin.sh
-source ./install/chezmoi.sh "$chezmoi_repository_arg"
+source ./install/chezmoi.sh $chezmoi_repository_arg
 # source ./install/tldr.sh
 source ./install/kitty.sh
 # source ./install/ulauncher.sh

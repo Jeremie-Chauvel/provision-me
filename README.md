@@ -27,7 +27,7 @@ bash ./install.sh [optional chezmoi dotfiles repository]
 ex:
 
 ```bash
-bash ./install.sh git@github.com:Jeremie-Chauvel/chezmoi.git/bluefin
+bash ./install.sh git@github.com:Jeremie-Chauvel/chezmoi.git --branch bluefin
 ```
 
 or run a given script:
