@@ -12,7 +12,7 @@ sudo -v
 source ./install/packages.sh
 source ./install/atuin.sh
 source ./install/chezmoi.sh
-# source ./install/tldr.sh
+source ./install/tldr.sh
 source ./install/kitty.sh
 # source ./install/ulauncher.sh
 # source ./install/fnm.sh # brew
