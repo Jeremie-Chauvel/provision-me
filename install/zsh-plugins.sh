@@ -17,8 +17,8 @@ readonly zsh_plugin_folder=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins
 
 add_plugin_from_git() {
   set +u
-  local readonly plugin_directory=$1
-  local readonly plugin_url=$2
+  local plugin_directory=$1
+  local plugin_url=$2
   set -u
   if [ -d "${zsh_plugin_folder}/${plugin_directory}" ]; then
     cd "${zsh_plugin_folder}/${plugin_directory}"
