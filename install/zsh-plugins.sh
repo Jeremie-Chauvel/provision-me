@@ -29,7 +29,7 @@ add_plugin_from_git() {
   fi
 }
 add_plugin_from_git 'zsh-autosuggestions' 'https://github.com/zsh-users/zsh-autosuggestions'
-add_plugin_from_git 'zsh-syntax-highlighting' 'https://github.com/zsh-users/zsh-syntax-highlighting.git'
+add_plugin_from_git 'fast-syntax-highlighting' 'https://github.com/zdharma-continuum/fast-syntax-highlighting'
 add_plugin_from_git 'auto-notify' 'https://github.com/MichaelAquilina/zsh-auto-notify.git'
 add_plugin_from_git 'fzf-tab' 'https://github.com/Aloxaf/fzf-tab.git'
 #add_plugin_from_git 'yarn-completion' 'https://github.com/buonomo/yarn-completion'
