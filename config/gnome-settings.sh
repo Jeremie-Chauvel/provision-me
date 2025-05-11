@@ -72,6 +72,10 @@ gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 5
 gsettings set org.gnome.mutter workspaces-only-on-primary false
 
+gnome-extensions disable 'tailscale@joaophi.github.com'
+gnome-extensions disable 'gsconnect@andyholmes.github.io'
+gnome-extensions disable 'dash-to-dock@micxgx.gmail.com'
+
 gnome-extensions enable 'appindicatorsupport@rgcjonas.gmail.com'
 gnome-extensions enable 'blur-my-shell@aunetx'
 gnome-extensions enable 'logomenu@aryan_k'
@@ -80,7 +84,3 @@ gnome-extensions enable 'just-perfection-desktop@just-perfection'
 gnome-extensions enable 'tilingshell@ferrarodomenico.com'
 gnome-extensions enable 'wiggle@mechtifs'
 gnome-extensions enable 'monitor-brightness-volume@ailin.nemui'
-
-gnome-extensions disable 'tailscale@joaophi.github.com'
-gnome-extensions disable 'gsconnect@andyholmes.github.io'
-gnome-extensions disable 'dash-to-dock@micxgx.gmail.com'

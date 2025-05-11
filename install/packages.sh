@@ -5,7 +5,7 @@ IFS=$'\n\t'
 
 brew install atuin direnv ripgrep \
   fzf fd yq gh neovim jesseduffield/lazygit/lazygit \
-  git-absorb fnm httpie xclip git-delta bat
+  git-absorb fnm httpie xclip git-delta bat eza zoxide
 
 # sudo apt update
 # # generic
