@@ -36,18 +36,14 @@ flatpak install --or-update --assumeyes flathub org.flameshot.Flameshot
 # source ./config/update-max-user-watches.sh
 # source ./config/disable-instant-shutdown-power-button.sh
 source ./config/keymap-gnome.sh
-source ./install/zsh-plugins.sh
-# source ./install/vscode.sh
-# source ./install/pipenv.sh
-# source ./install/go.sh
-# source ./install/light.sh
+# z4h-humans bootstrap itself if all dependency are installed
 # source ./install/dmenu-xrandr.sh
 # source ./install/mkcert.sh
 # source ./install/screen-recording.sh
 # source ./install/keepass.sh
 # source ./install/grub-customizer.sh
 # source ./install/appImages-launcher.sh
-# source ./install/bat.sh
+# source ./install/bat.sh #brew
 # source ./install/delta.sh # brew
 # source ./install/jenv.sh
 # source ./install/yq.sh # brew
