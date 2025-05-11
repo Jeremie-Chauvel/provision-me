@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # setup some keybindings for ubuntu
 
-if [[ "gnome" != $(echo $DESKTOP_SESSION) ]]; then
+if [[ "gnome" != "$DESKTOP_SESSION" ]]; then
   echo "not on Gnome, skipping"
   exit 0
 fi
@@ -44,7 +44,6 @@ gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-3" "['<Super
 gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-4" "['<Super>apostrophe']"
 gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-last" "['<Super>parenleft']"
 
-
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"
 
 # Keybind System monitor
@@ -56,3 +55,32 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding "<Super>t"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command "/usr/local/bin/kitty"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name "Kitty"
+
+# pref
+gsettings set org.gnome.desktop.interface accent-color 'blue'
+gsettings set org.gnome.desktop.calendar show-weekdate true
+gsettings set org.gnome.desktop.interface clock-format '24h'
+gsettings set org.gtk.Settings.FileChooser clock-format '24h'
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface enable-animations false
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
+gsettings set org.gnome.desktop.peripherals.mouse double-click 250
+gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
+
+gsettings set org.gnome.desktop.wm.keybindings "switch-input-source" "['<Super>space']"
+gsettings set org.gnome.mutter dynamic-workspaces false
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 5
+gsettings set org.gnome.mutter workspaces-only-on-primary false
+
+gnome-extensions enable 'appindicatorsupport@rgcjonas.gmail.com'
+gnome-extensions enable 'blur-my-shell@aunetx'
+gnome-extensions enable 'logomenu@aryan_k'
+gnome-extensions enable 'search-light@icedman.github.com'
+gnome-extensions enable 'just-perfection-desktop@just-perfection'
+gnome-extensions enable 'tilingshell@ferrarodomenico.com'
+gnome-extensions enable 'wiggle@mechtifs'
+gnome-extensions enable 'monitor-brightness-volume@ailin.nemui'
+
+gnome-extensions disable 'tailscale@joaophi.github.com'
+gnome-extensions disable 'gsconnect@andyholmes.github.io'
+gnome-extensions disable 'dash-to-dock@micxgx.gmail.com'

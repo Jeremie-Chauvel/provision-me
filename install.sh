@@ -35,7 +35,7 @@ flatpak install --or-update --assumeyes flathub org.flameshot.Flameshot
 # source ./install/docker.sh
 # source ./config/update-max-user-watches.sh
 # source ./config/disable-instant-shutdown-power-button.sh
-source ./config/keymap-gnome.sh
+source ./config/gnome-settings.sh
 # z4h-humans bootstrap itself if all dependency are installed
 # source ./install/dmenu-xrandr.sh
 # source ./install/mkcert.sh
