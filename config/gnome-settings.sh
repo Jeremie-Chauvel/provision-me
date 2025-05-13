@@ -38,11 +38,11 @@ gsettings set org.gnome.desktop.wm.keybindings "move-to-workspace-2" "['<Shift><
 gsettings set org.gnome.desktop.wm.keybindings "move-to-workspace-3" "['<Shift><Super>3']"
 gsettings set org.gnome.desktop.wm.keybindings "move-to-workspace-4" "['<Shift><Super>4']"
 gsettings set org.gnome.desktop.wm.keybindings "move-to-workspace-last" "['<Shift><Super>5']"
-gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-1" "['<Super>ampersand']"
-gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-2" "['<Super>eacute']"
-gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-3" "['<Super>quotedbl']"
-gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-4" "['<Super>apostrophe']"
-gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-last" "['<Super>parenleft']"
+gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-1" "['<Super>1']"
+gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-2" "['<Super>2']"
+gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-3" "['<Super>3']"
+gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-4" "['<Super>4']"
+gsettings set org.gnome.desktop.wm.keybindings "switch-to-workspace-last" "['<Super>5']"
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"
 
