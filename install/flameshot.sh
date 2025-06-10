@@ -5,7 +5,10 @@ IFS=$'\n\t'
 
 # troubleshoot https://github.com/emersion/xdg-desktop-portal-wlr/wiki/%22It-doesn't-work%22-Troubleshooting-Checklist/f8d89b8a2f9d61ba318c8be075b46de230c7d97e
 # sudo apt install flameshot -y xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr # for sway
-sudo apt install flameshot -y # pop os
+# sudo apt install flameshot -y # pop os
+flatpak install --or-update --assumeyes flathub org.flameshot.Flameshot
+flatpak permission-set screenshot screenshot org.flameshot.Flameshot yes
+
 # shotcut to setup in your dotfiles:
 # flameshot gui
 # eg for sway/i3: `bindsym Print exec flameshot gui``
