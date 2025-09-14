@@ -4,5 +4,4 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-brew install atuin
-
+sudo pacman --needed --noconfirm -S atuin

@@ -3,5 +3,5 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-brew install tealdeer
+sudo pacman --needed --noconfirm -S tldr
 tldr --update

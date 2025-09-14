@@ -7,7 +7,7 @@ SCRIPT_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 source "$SCRIPT_DIRECTORY/utils/early_exit_if_command_exist.sh"
 early_exit_if_command_exist aws
 
-python3 -m pip install awscli --upgrade --user
-if [ ! -d ~/.aws ]; then
-    mkdir ~/.aws
-fi
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+rm awscliv2.zip
