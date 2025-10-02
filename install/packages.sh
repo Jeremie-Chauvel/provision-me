@@ -5,7 +5,8 @@ IFS=$'\n\t'
 
 sudo pacman --needed --noconfirm -S direnv ripgrep \
   fzf fd yq github-cli neovim lazygit lazydocker \
-  git-absorb httpie git-delta bat eza zoxide zsh
+  git-absorb httpie git-delta bat eza zoxide zsh \
+  difftastic mergiraf
 
 # sudo apt update
 # # generic
